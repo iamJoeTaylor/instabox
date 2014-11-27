@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.photos {
+  min-height: 100%;
+
+  width: 100%;
+  min-width: 100%;
+  background: black;
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+img.bg {
+  min-height: 100%;
+
+  margin-left: -25%;   /* 50% */
+  height: auto;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+}
+
+.avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  border: 0;
+}

@@ -8,9 +8,7 @@ var argv = require('minimist')(process.argv.slice(2), {
 var configJSON = require('./config');
 var Collection = require('./lib/collection');
 var Instagram = require('instagram-node-lib');
-var express = require('express');
-var app = express();
-var port = process.env.PORT || 3700;
+var server = require('./server');
 
 var clientID = configJSON.clientID;
 var clientSecret = configJSON.clientSecret;
@@ -26,4 +24,3 @@ new Collection({
   debug: argv.debug
 });
 
-app.listen(port);
